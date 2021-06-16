@@ -48,6 +48,10 @@ main {
     padding: 1rem;
 }
 
+script {
+    display: none;
+}
+
 .navbar {
     width: 5rem;
     height: 100vh;
