@@ -180,6 +180,10 @@ main {
 .theme-icon {
     display: none;
 }
+
+#lightIcon {
+    display: block;
+}
   
 .dark #darkIcon {
     display: block;
