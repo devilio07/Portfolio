@@ -5,9 +5,13 @@ const themeMap = {
 };
 
 const theme = localStorage.getItem('theme');
-
-document.body.classList.replace(document.body.classList, theme);
-
+if (theme !== 'undefined') {
+    document.body.classList.replace(document.body.classList, theme);
+    console.log(theme)
+}
+else {
+    document.body.classList.add('light');
+}
 
 document.getElementById('themeButton').onclick = () => {
     const currTheme = document.body.classList[0];
