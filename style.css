@@ -26,6 +26,7 @@ body{
     background-color: var(--bg-content);
     margin: 0;
     padding: 0;
+    transition:  background 500ms ease-in-out, color 1000ms ease-in-out;
 
 }
 

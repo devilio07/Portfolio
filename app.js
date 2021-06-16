@@ -5,9 +5,8 @@ const themeMap = {
     light: "sun",
     sun: "dark"
 };
-
-body.className="";
 const theme = localStorage.getItem('theme');
+body.classList.remove('light');
 body.classList.add(theme);
 
 
