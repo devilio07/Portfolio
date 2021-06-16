@@ -6,6 +6,9 @@
     --bg-primary: #23232e;
     --bg-secondary:#141418;
     --transition-speed: 600ms;
+    --text-content: #000000;
+    --bg-content : #ffffff;
+
     /* variables for color */
     /* --gray0: #f8f8f8;
     --gray1: #dbe1e8;
@@ -19,8 +22,8 @@
 }
 
 body{
-    color:black;
-    background-color: white;
+    color: var(--text-content);
+    background-color: var(--bg-content);
     margin: 0;
     padding: 0;
 
@@ -152,6 +155,8 @@ main {
     --text-secondary: #ececec;
     --bg-primary: #23232e;
     --bg-secondary: #141418;
+    --text-content : white;
+    --bg-content: black;
 }
 
 .light {
@@ -159,6 +164,8 @@ main {
     --text-secondary: #000000;
     --bg-primary: #ffffff;
     --bg-secondary: #e4e4e4;
+    --text-content : black;
+    --bg-content: white;
 }
 
 .sun {
@@ -166,21 +173,23 @@ main {
     --text-secondary: #35535c;
     --bg-primary: #fffaee;
     --bg-secondary: #f1f5b8;
+    --text-content : black;
+    --bg-content: white;
 }
 
 .theme-icon {
     display: none;
 }
   
-  .dark #darkIcon {
+.dark #darkIcon {
     display: block;
 }
   
-  .light #lightIcon {
+.light #lightIcon {
     display: block;
 }
   
-  .sun #solarIcon {
+.sun #solarIcon {
     display: block;
 }
 
