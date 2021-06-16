@@ -6,6 +6,16 @@
     --bg-primary: #23232e;
     --bg-secondary:#141418;
     --transition-speed: 600ms;
+    /* variables for color */
+    /* --gray0: #f8f8f8;
+    --gray1: #dbe1e8;
+    --gray2: #b2becd;
+    --gray3: #6c7983;
+    --gray4: #454e56;
+    --gray5:#2a2e35;
+    --gray6:#12181b; */
+
+
 }
 
 body{
@@ -137,6 +147,44 @@ main {
   transition: var(--transition-speed);
 }
 
+.dark {
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+}
+
+.light {
+    --text-primary: #1f1f1f;
+    --text-secondary: #000000;
+    --bg-primary: #ffffff;
+    --bg-secondary: #e4e4e4;
+}
+
+.sun {
+    --text-primary: #576e75;
+    --text-secondary: #35535c;
+    --bg-primary: #fffaee;
+    --bg-secondary: #f1f5b8;
+}
+
+.theme-icon {
+    display: none;
+}
+  
+  .dark #darkIcon {
+    display: block;
+}
+  
+  .light #lightIcon {
+    display: block;
+}
+  
+  .sun #solarIcon {
+    display: block;
+}
+
+
 
 /* Finally adding media query to make it responsive */
 
@@ -154,6 +202,10 @@ main {
 
     .navbar-nav{
         flex-direction: row-reverse;
+    }
+
+    .nav-item {
+        width: 35%;
     }
 
     .nav-link{
@@ -198,6 +250,4 @@ main {
     .navbar:hover .logo-text {
         left: 0px;
     }
-
-
 }
