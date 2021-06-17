@@ -220,6 +220,7 @@ script {
     }
     
     .nav-item:last-child {
+        margin: 0%;
         margin-right: auto;
     }
 
@@ -244,7 +245,7 @@ script {
 
     .navbar:hover .logo {
         width: 0;
-        margin: 0%;
+        margin: auto;
         padding: 0%;
         transition: tranform var(--transition-speed);
     }
