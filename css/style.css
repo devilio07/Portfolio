@@ -216,7 +216,7 @@ script {
     }
 
     .logo{
-        margin: auto;
+        display: none;
     }
     
     .nav-item:last-child {
@@ -228,26 +228,15 @@ script {
         flex-direction: row-reverse;
     }
 
-    .nav-item {
-        display: none;
-    }
-
-    .navbar:hover .nav-item{
+    /* .navbar:hover .nav-item{
         display: block;
-    }
+    } */
 
     .nav-link svg {
         min-width: 2rem;
         width: 1rem;
         margin: 0%;
         padding: 0;
-    }
-
-    .navbar:hover .logo {
-        width: 0;
-        margin: auto;
-        padding: 0%;
-        transition: tranform var(--transition-speed);
     }
 
     .nav-link{
