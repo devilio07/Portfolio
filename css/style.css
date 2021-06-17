@@ -26,7 +26,7 @@ body{
     background-color: var(--bg-content);
     margin: 0;
     padding: 0;
-    transition:  background 500ms ease-in-out, color 1000ms ease-in-out;
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 
 }
 
@@ -52,6 +52,10 @@ script {
     display: none;
 }
 
+#Theme-changer {
+    text-align: center;
+}
+
 .navbar {
     width: 5rem;
     height: 100vh;
@@ -69,6 +73,7 @@ script {
     flex-direction: column;
     align-items: center;
     height: 100%;
+    width: 100%;
 }
 
 .nav-item{
@@ -90,6 +95,7 @@ script {
 }
 
 .nav-link:hover {
+    /* width: 16rem; */
     filter: grayscale(0%) opacity(1);
     background: var(--bg-secondary);
     color: var(--text-secondary);
@@ -103,7 +109,9 @@ script {
 
 .navbar:hover {
     width: 16rem;
+    filter: opacity(0.99);
 }
+
 
 .link-text {
     display: none;
@@ -197,9 +205,6 @@ script {
 .sun #solarIcon {
     display: block;
 }
-
-
-
 /* Finally adding media query to make it responsive */
 
 /* small screen */
@@ -213,13 +218,35 @@ script {
     .logo{
         margin: auto;
     }
+    
+    .nav-item:last-child {
+        margin-right: auto;
+    }
 
     .navbar-nav{
         flex-direction: row-reverse;
     }
 
     .nav-item {
-        width: 35%;
+        display: none;
+    }
+
+    .navbar:hover .nav-item{
+        display: block;
+    }
+
+    .nav-link svg {
+        min-width: 2rem;
+        width: 1rem;
+        margin: 0%;
+        padding: 0;
+    }
+
+    .navbar:hover .logo {
+        width: 0;
+        margin: 0%;
+        padding: 0%;
+        transition: tranform var(--transition-speed);
     }
 
     .nav-link{
