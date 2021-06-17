@@ -58,7 +58,7 @@ script {
     position: fixed;
     background-color: var(--bg-primary);
     transition : width var(--transition-speed) ease;
-    overflow:hidden;
+    overflow:auto;
 }
 
 .navbar-nav {
