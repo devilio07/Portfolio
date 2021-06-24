@@ -11,12 +11,12 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Marmik</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
     <script src="js/jquery.backstretch.min.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function($){
             'use strict';
-            jQuery('body').backstretch(["Images/bg/bg1.jpg","Images/bg/bg2.jpg","Images/bg/bg3.jpg","Images/bg/bg4.jpg"], {duration: 5000, fade: 500, AlignY:true, AlignX:true});
+            jQuery('body').backstretch(["Images/bg/bg1.jpg","Images/bg/bg2.jpg","Images/bg/bg3.jpg","Images/bg/bg4.jpg"], {duration: 5000, fade: 500, AlignY:true, AlignX:true, scale: 'cover', fadefirst:true});
         });
     </script>
 </head>
