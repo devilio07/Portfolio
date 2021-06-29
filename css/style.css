@@ -17,8 +17,6 @@
     --gray4: #454e56;
     --gray5:#2a2e35;
     --gray6:#12181b; */
-
-
 }
 
 .clearfix {
@@ -76,6 +74,10 @@ script {
     display: none;
 }
 
+footer {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+}
 /* section {
     margin-left: 5rem;
 } */
@@ -247,7 +249,7 @@ script {
 }
 
 .bg-dark {
-    color: var(--text-secondary);
+    color: white;
     background-color: black;
 }
 .bg-light {
@@ -286,12 +288,12 @@ script {
 
 /* Customising the slider */
 
-#carousel-full {
+/* #carousel-full {
     position: relative;
     width: 100%;
     top:0%
 
-}
+} */
 
 .btn {
     font-weight: 400;
@@ -334,9 +336,9 @@ script {
 }
 
 #main-slider .carousel .boxed:hover {
-    box-shadow: none;
-    color: black;
-    background-color: rgba(141, 114, 163, 0.35);;
+    box-shadow: #000000 0 10px 10px 0;
+    color: white;
+    background-color: rgba(120, 112, 128, 0.3);
 }
 
 #main-slider .carousel .item {
@@ -383,7 +385,49 @@ script {
 	        animation-fill-mode: both;
 }
 
+/* Footer customisation */
 
+#footer {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    bottom:0;
+    flex-direction: row;
+    padding: 2rem;
+}
+
+#name {
+    color: rgb(119, 119, 119);
+    text-decoration: none;
+    font-style: italic;
+}
+
+#rights {
+    font-size:x-small;
+    margin-left: 1rem;
+}
+
+
+.social {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Instagram {
+    padding: 1rem;
+}
+#LinkedIn {
+    padding: 1rem;
+}#Github {
+    padding: 1rem;
+}
+#left {
+    margin-left: auto;
+}
 /* Finally adding media query to make it responsive */
 
 /* small screen */
@@ -454,6 +498,17 @@ script {
     #main-slider .carousel-inner .item .row,
     #main-slider .carousel-inner .item .row .col-sm-12 {
         height: 100vh;
+    }
+
+    #footer {
+        display: block;
+    }
+
+    .social {
+        margin-bottom: 3rem;
+    }
+    #rights {
+        margin: 0%;
     }
 
 }
