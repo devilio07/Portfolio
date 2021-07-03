@@ -98,8 +98,6 @@ footer {
     margin-top: 10rem;
     
 }
-
-
 .navbar {
     width: 5rem;
     height: 100vh;
@@ -385,6 +383,55 @@ footer {
 	        animation-fill-mode: both;
 }
 
+/* main content lies here */
+
+hr {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #fff;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+.main-title {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.section-heading hr {
+    margin: 5px auto;
+    max-width: 330px;
+    opacity: 0.9;
+}
+
+.block {
+    display: inline-flex;
+    margin: 0%;
+    padding:0%;
+    align-items: flex-start;
+}
+.inside-content {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.content-heading {
+    font-size: larger;
+    font-style: oblique;
+}
+
+.block:hover  {
+    box-shadow: 0px 5px 15px black;
+}
+
+
+
+
+
+
+
+
+
 /* Footer customisation */
 
 #footer {
@@ -418,15 +465,31 @@ footer {
 }
 
 #Instagram {
-    padding: 1rem;
+    padding: 1rem; 
 }
 #LinkedIn {
     padding: 1rem;
-}#Github {
+}
+
+#Github {
     padding: 1rem;
 }
 #left {
     margin-left: auto;
+}
+#Instagram a {
+    /* text-decoration: none; */
+    color: white;
+}#LinkedIn a {
+    /* text-decoration: none; */
+    color: white;
+}#Github a {
+    /* text-decoration: none; */
+    color: white;
+}
+#left a {
+    text-decoration: none;
+    color: white;
 }
 /* Finally adding media query to make it responsive */
 
